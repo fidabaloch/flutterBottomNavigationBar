@@ -2,6 +2,8 @@ import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 
 class PersonalScreen extends StatelessWidget {
+  const PersonalScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,7 +50,13 @@ class PersonalScreen extends StatelessWidget {
             onChanged: print,
             selectedItem: "Brazil",
           ),
-        )
+        ),
+        ElevatedButton(
+          onPressed: () {
+            //TODO: Implement on peress
+          },
+          child: Text('Submit'),
+        ),
       ],
     );
   }
